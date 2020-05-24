@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JarabePipesComponent } from './jarabe-pipes.component';
+import { JarabeAngularPipesComponent } from './jarabe-angular-pipes.component';
 
-describe('JarabePipesComponent', () => {
-  let component: JarabePipesComponent;
-  let fixture: ComponentFixture<JarabePipesComponent>;
+describe('JarabeAngularPipesComponent', () => {
+  let component: JarabeAngularPipesComponent;
+  let fixture: ComponentFixture<JarabeAngularPipesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JarabePipesComponent ]
+      declarations: [ JarabeAngularPipesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(JarabePipesComponent);
+    fixture = TestBed.createComponent(JarabeAngularPipesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

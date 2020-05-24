@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "jarabe-pipes": [
-        "dist/jarabe-pipes"
+      "jarabe-angular-pipes": [
+        "dist/jarabe-angular-pipes"
       ],
-      "jarabe-pipes/*": [
-        "dist/jarabe-pipes/*"
+      "jarabe-angular-pipes/*": [
+        "dist/jarabe-angular-pipes/*"
       ]
     }
   }

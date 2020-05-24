@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-jarabe-pipes',
+  selector: 'lib-jarabe-angular-pipes',
   template: `
     <p>
-      jarabe-pipes works!
+      jarabe-angular-pipes works!
     </p>
   `,
   styles: []
 })
-export class JarabePipesComponent implements OnInit {
+export class JarabeAngularPipesComponent implements OnInit {
 
   constructor() { }
 
