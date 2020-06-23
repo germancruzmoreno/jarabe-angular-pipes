@@ -25,7 +25,7 @@ export class JarabeImagePipe implements PipeTransform {
       if (api) {
         if (api.hasOwnProperty('baseURL')) {
           url = api['baseURL'] + url;
-        } else if (api.hasOwnProperty('getBaseURL')) {
+        } else if (api.getBaseURL) {
           url = api['getBaseURL']() + url;
         }
       }
