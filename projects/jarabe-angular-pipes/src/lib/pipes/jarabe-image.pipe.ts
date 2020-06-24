@@ -11,13 +11,16 @@ export class JarabeImagePipe implements PipeTransform {
 
   sizes: Array < String > = ['', 'avatar', 'thumb', 'small', 'medium', 'big'];
 
-  transform(url: string, name: string = '', api ?: any): string {
-    if(!url){
+  transform(file:any, name: string = '', api ?: any): string {
+    if(!file.URL){
       return "assets/img/no-image-found.png"
     }
-    url = this.GetFullUrl(url, api);
+    file.URL = this.GetFullUrl(file.URL, api);
+    if(!file.resize) return file.URL
+
     name = this.CheckSizeName(name);
-    return this.PepareUrlWithSufix(url, name);
+    return this.PepareUrlWithSufix(file.URL, name);
+    
   }
 
   private GetFullUrl(url: string, api: any) {
