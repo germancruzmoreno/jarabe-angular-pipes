@@ -11,8 +11,8 @@ export class JarabeImagePipe implements PipeTransform {
 
   sizes: Array < String > = ['', 'avatar', 'thumb', 'small', 'medium', 'big'];
 
-  transform(file:any={}, name: string = '', api ?: any): string {
-    if(!file.URL){
+  transform(file:any={URL:""}, name: string = '', api ?: any): string {
+    if(!file || !file.URL){
       return "assets/img/no-image-found.png"
     }
     file.URL = this.GetFullUrl(file.URL, api);
