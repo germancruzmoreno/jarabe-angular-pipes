@@ -1,8 +1,23 @@
 {
   "name": "jarabe-angular-pipes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "peerDependencies": {
     "@angular/common": "~9.1.9",
     "@angular/core": "~9.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/germancruzmoreno/jarabe-angular-pipes.git"
+  },
+  "keywords": [
+    "Jarabe Angular Pipes",
+    "Jarabe filter pipe",
+    "Jarabe image pipe"
+  ],
+  "author": "German cruz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/germancruzmoreno/jarabe-angular-pipes/issues"
+  },
+  "homepage": "https://github.com/germancruzmoreno/jarabe-angular-pipes#readme"
 }
